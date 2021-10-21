@@ -1,0 +1,275 @@
+// button for donations
+.button-container{
+    text-align: center;
+}
+.button {
+    background-color: #00ADEF;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+  }
+
+
+
+#hnc-header {
+    background-color: white;
+
+    #logo-img {
+        height: auto;
+        width: 234px;
+        margin: auto;
+        display: block;
+    }
+
+    h1 {
+        text-align: center;
+        color: #00ADEF;
+    }
+}
+
+#hnc-2021-banner {
+    background-color: #00ADEF;
+   padding-top: 30px;
+   padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+
+    #banner-img {
+        height: auto;
+        width: 300px;
+        margin: auto;
+        display: block;
+    }
+
+    .banner-text {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #fff;
+
+        .banner-title{
+            // todo: change font family and font weight
+        }
+        .banner-subtitle{
+            // todo: change font family and font weight
+        }
+
+    }
+}  
+
+#about-hnc {
+    padding-top: 30px;
+   padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    background-color: white;
+
+    #about-hnc-img {
+        height: auto;
+        width: 500px;
+        margin: auto;
+        display: block;
+    }
+
+    .about-hnc-text {
+        text-align: center;
+        padding-right: 20px;
+        padding-left: 20px;
+        color: #00ADEF;
+
+        .about-hnc-title {
+            // todo: make this more readable maybe a stroke effect
+        }
+
+        .about-hnc-desc {
+            color: #000;
+            // todo: increase the font weight
+            // todo: change the font family
+            // style add spacing
+        }
+    }
+}
+
+#hnc-signup {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    background-color: #00ADEF;
+    
+    #qr-code {
+        margin: auto;
+        display: block;
+        width: 50%;
+        height: auto;
+    }
+
+    .signup-container {
+
+    }
+
+    .signup-logo {
+        color: #00ADEF;
+        text-align: center;
+        .paper {
+            background-color: #fff;
+            text-align: center;
+            font-size: 200px;
+            width: 40%;
+            margin: auto;
+            display: block; 
+            padding: 4%;
+            border-radius: 70%;
+            transform: rotate(-10deg);
+        }
+
+        .sign-up-title {
+            color: #fff;
+        }
+    }
+
+    .signup-desc {
+
+    }
+
+}
+
+#hnc-resources {
+    
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+    .resource-container {
+        .student-container {
+           text-align: center;
+            .student-logo {
+                
+                .student {
+                    color: #fff;
+                    background-color: #00ADEF;
+                    text-align: center;
+                    font-size: 200px;
+                    width: 40%;
+                    margin: auto;
+                    display: block; 
+                    padding: 4%;
+                    border-radius: 70%;
+                }
+
+                .student-title {
+                    color: #00ADEF;
+                }
+            }
+
+        }
+
+        .volunteer-container {
+            text-align: center;
+            .volunteer-logo {
+
+                .volunteer{
+                    color: #fff;
+                    background-color: #00ADEF;
+                    text-align: center;
+                    font-size: 200px;
+                    width: 40%;
+                    margin: auto;
+                    display: block; 
+                    padding: 4%;
+                    border-radius: 70%;
+
+                }
+
+                .volunteer-title {
+                    color: #00ADEF;
+                }
+
+            }
+        }
+
+    }
+}
+
+#hnc-footer {
+    background-color: #00ADEF;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 100%;
+    height: auto;
+
+    .footer-content {
+        .txt-mission-section {
+
+            .logo{
+                #txt-logo-white {
+                  width: 40%;
+                  height: auto;  
+                  margin: auto;
+                  display: block;
+                }
+
+            }
+
+            .mission {
+                color: #fff;
+                text-align: justify;
+                padding-right: 10%;
+                padding-left: 10%;
+            }
+
+        }
+    }
+
+    .txt-socials-section {
+        .contact-info {
+            color: #fff;
+            text-align: center;
+        }
+
+        .social-icons {
+            color: #fff;
+            text-align: center;
+            #facebook {
+                margin-right: 2%;
+                font-size: 40px;
+            }
+            
+            #instagram {
+                margin-right: 2%;
+                font-size: 40px;
+            }
+
+            #twitter {
+                margin-right: 2%;
+                font-size: 40px;
+            }
+
+            #youtube {
+                margin-right: 2%;
+                font-size: 40px;
+            }
+          
+        }
+    }
+
+    .footer-copyright {
+        padding-top: 5%;
+        color: #fff;
+        text-align: center;
+    }
+
+}
+
+.main-page-view {
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
