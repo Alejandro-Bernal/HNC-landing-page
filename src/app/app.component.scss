@@ -1,4 +1,7 @@
 // button for donations
+
+
+
 .button-container{
     text-align: center;
 }
@@ -14,6 +17,8 @@
     margin: 4px 2px;
     cursor: pointer;
     width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
   }
 
 
@@ -36,8 +41,8 @@
 
 #hnc-2021-banner {
     background-color: #00ADEF;
-   padding-top: 30px;
-   padding-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
     width: 100%;
     height: auto;
 
@@ -56,9 +61,15 @@
 
         .banner-title{
             // todo: change font family and font weight
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: bold;
         }
         .banner-subtitle{
             // todo: change font family and font weight
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+            font-weight: bold;
         }
 
     }
@@ -86,6 +97,17 @@
 
         .about-hnc-title {
             // todo: make this more readable maybe a stroke effect
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: bold;
+        }
+
+        .about-hnc-subtitle {
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 2%;
+            color: #00ADEF;
         }
 
         .about-hnc-desc {
@@ -93,8 +115,39 @@
             // todo: increase the font weight
             // todo: change the font family
             // style add spacing
-        }
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: larger;
+            font-weight: bold;
+
+            ul li::before {
+                content: "\2022";
+                color: #00ADEF;
+                font-weight: bold;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+              
+              }
+
+            .hnc-desc {
+                font-size: larger;
+                text-align: justify;
+
+            }
+
+            .about-list-group{
+                padding: 5%;
+
+                .about-list-item {
+                    text-align: justify;
+                    margin-bottom:4%;
+                    font-weight: bolder;
+                    font-size: larger;
+                }
+            }
+         }
     }
+
 }
 
 #hnc-signup {
@@ -103,12 +156,15 @@
     width: 100%;
     height: auto;
     background-color: #00ADEF;
+    margin: auto;
+    display: block;
     
     #qr-code {
         margin: auto;
         display: block;
         width: 50%;
         height: auto;
+        margin-bottom: 5%;
     }
 
     .signup-container {
@@ -116,85 +172,121 @@
     }
 
     .signup-logo {
-        color: #00ADEF;
+        color: #fff;
         text-align: center;
         .paper {
-            background-color: #fff;
+            // background-color: #fff;
             text-align: center;
             font-size: 200px;
             width: 40%;
             margin: auto;
             display: block; 
-            padding: 4%;
             border-radius: 70%;
             transform: rotate(-10deg);
         }
 
         .sign-up-title {
             color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: x-large;
         }
+
     }
 
     .signup-desc {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 5%;
 
+        .answer {
+            font-size: 25px;
+            color: black;
+        }
     }
 
 }
 
-#hnc-resources {
+#hnc-sponsors {
     
     padding-top: 30px;
-    padding-bottom: 30px;
+   margin-left: auto;
+   margin-right: auto;
+
     width: 100%;
     height: auto;
-    .resource-container {
-        .student-container {
-           text-align: center;
-            .student-logo {
-                
-                .student {
-                    color: #fff;
-                    background-color: #00ADEF;
+   
+    .sponsors-container {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: x-large;
+        font-weight: bold;
+        .sponsor {
+            .sponsor-logo {
+                color: #00ADEF;
+                text-align: center;
+                .handshake {
+                    // background-color: #00ADEF;
                     text-align: center;
-                    font-size: 200px;
+                    font-size: 180px;
                     width: 40%;
                     margin: auto;
                     display: block; 
-                    padding: 4%;
-                    border-radius: 70%;
+                    border-radius: 70%
+
                 }
 
-                .student-title {
+                .sponsor-title {
                     color: #00ADEF;
                 }
             }
 
         }
 
-        .volunteer-container {
+        .all-logo-sponsors {
             text-align: center;
-            .volunteer-logo {
-
-                .volunteer{
-                    color: #fff;
-                    background-color: #00ADEF;
-                    text-align: center;
-                    font-size: 200px;
-                    width: 40%;
-                    margin: auto;
-                    display: block; 
-                    padding: 4%;
-                    border-radius: 70%;
-
+            .sponsor-one {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                #hacla {
+                    width: 200px;
+                    height: auto;
+                    
                 }
-
-                .volunteer-title {
-                    color: #00ADEF;
+            }
+            .sponsor-two {
+                
+                #snap {
+                    width: 200px;
+                    height: auto;
                 }
 
             }
+            .sponsor-three {
+            
+                padding-bottom: 5%;
+                #facebook {
+                    width: 350px;
+                    height: auto;
+                }
+            }
+            .sponsor-four {
+                padding-top: 5%;
+                padding-bottom: 5%;
+                #broad {
+                    width: 350px;
+                    height: auto;
+                }
+            }
+            .sponsor-five {
+                padding-top: 8%;
+                padding-bottom: 5%;             
+                #ccf {
+                    width: 350px;
+                    height: auto;
+                }
+            }
         }
-
     }
 }
 
@@ -203,7 +295,7 @@
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
-    height: auto;
+    height: 100%;
 
     .footer-content {
         .txt-mission-section {
