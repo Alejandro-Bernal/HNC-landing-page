@@ -1,6 +1,8 @@
 // button for donations
 
-
+a {
+    color: white;
+}
 
 .button-container{
     text-align: center;
@@ -21,12 +23,28 @@
     font-size: 35px;
   }
 
+  .button-white {
+    background-color: #fff;
+    border: none;
+    color: #00ADEF;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width: 50%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+  }
 
 
-#hnc-header {
+
+.hnc-header {
     background-color: white;
 
-    #logo-img {
+    .logo-img {
         height: auto;
         width: 234px;
         margin: auto;
@@ -39,14 +57,14 @@
     }
 }
 
-#hnc-2021-banner {
+.hnc-2021-banner {
     background-color: #00ADEF;
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
     height: auto;
 
-    #banner-img {
+    .banner-img {
         height: auto;
         width: 300px;
         margin: auto;
@@ -75,14 +93,14 @@
     }
 }  
 
-#about-hnc {
+.about-hnc {
     padding-top: 30px;
    padding-bottom: 30px;
     width: 100%;
     height: auto;
     background-color: white;
 
-    #about-hnc-img {
+    .about-hnc-img {
         height: auto;
         width: 500px;
         margin: auto;
@@ -102,14 +120,6 @@
             font-weight: bold;
         }
 
-        .about-hnc-subtitle {
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 2%;
-            color: #00ADEF;
-        }
-
         .about-hnc-desc {
             color: #000;
             // todo: increase the font weight
@@ -119,38 +129,51 @@
             font-size: larger;
             font-weight: bold;
 
-            ul li::before {
-                content: "\2022";
-                color: #00ADEF;
-                font-weight: bold;
-                display: inline-block; 
-                width: 1em;
-                margin-left: -1em;
-              
-              }
-
             .hnc-desc {
                 font-size: larger;
                 text-align: justify;
 
             }
-
-            .about-list-group{
-                padding: 5%;
-
-                .about-list-item {
-                    text-align: justify;
-                    margin-bottom:4%;
-                    font-weight: bolder;
-                    font-size: larger;
-                }
-            }
          }
+    }
+
+    .hnc-list-container {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: larger;
+        font-weight: bold;
+        .about-hnc-subtitle {
+            text-align: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 2%;
+            color: #00ADEF;
+        }
+
+        ul li::before {
+            content: "\2022";
+            color: #00ADEF;
+            font-weight: bold;
+            display: inline-block; 
+            width: 1em;
+            margin-left: -1em;
+          
+        }
+
+        .about-list-group{
+            padding: 5%;
+
+            .about-list-item {
+                text-align: justify;
+                margin-bottom:4%;
+                font-weight: bolder;
+                font-size: larger;
+            }
+        }
     }
 
 }
 
-#hnc-signup {
+.hnc-signup {
     padding-top: 30px;
     padding-bottom: 30px;
     width: 100%;
@@ -159,16 +182,12 @@
     margin: auto;
     display: block;
     
-    #qr-code {
+    .qr-code {
         margin: auto;
         display: block;
         width: 50%;
         height: auto;
         margin-bottom: 5%;
-    }
-
-    .signup-container {
-
     }
 
     .signup-logo {
@@ -206,9 +225,21 @@
         }
     }
 
+    .sign-up-links {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding: 1%;
+
+        .link-heading {
+            text-align: center;
+        }
+    }
+
 }
 
-#hnc-sponsors {
+.hnc-sponsors {
     
     padding-top: 30px;
    margin-left: auto;
@@ -248,7 +279,7 @@
             .sponsor-one {
                 padding-top: 5%;
                 padding-bottom: 5%;
-                #hacla {
+                .hacla {
                     width: 200px;
                     height: auto;
                     
@@ -256,7 +287,7 @@
             }
             .sponsor-two {
                 
-                #snap {
+                .snap {
                     width: 200px;
                     height: auto;
                 }
@@ -265,7 +296,7 @@
             .sponsor-three {
             
                 padding-bottom: 5%;
-                #facebook {
+                .facebook {
                     width: 350px;
                     height: auto;
                 }
@@ -273,7 +304,7 @@
             .sponsor-four {
                 padding-top: 5%;
                 padding-bottom: 5%;
-                #broad {
+                .broad {
                     width: 350px;
                     height: auto;
                 }
@@ -281,7 +312,7 @@
             .sponsor-five {
                 padding-top: 8%;
                 padding-bottom: 5%;             
-                #ccf {
+                .ccf {
                     width: 350px;
                     height: auto;
                 }
@@ -290,7 +321,7 @@
     }
 }
 
-#hnc-footer {
+.hnc-footer {
     background-color: #00ADEF;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -301,7 +332,7 @@
         .txt-mission-section {
 
             .logo{
-                #txt-logo-white {
+                .txt-logo-white {
                   width: 40%;
                   height: auto;  
                   margin: auto;
@@ -329,22 +360,22 @@
         .social-icons {
             color: #fff;
             text-align: center;
-            #facebook {
+            .facebook {
                 margin-right: 2%;
                 font-size: 40px;
             }
             
-            #instagram {
+            .instagram {
                 margin-right: 2%;
                 font-size: 40px;
             }
 
-            #twitter {
+            .twitter {
                 margin-right: 2%;
                 font-size: 40px;
             }
 
-            #youtube {
+            .youtube {
                 margin-right: 2%;
                 font-size: 40px;
             }
@@ -364,4 +395,231 @@
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
+}
+
+// Make responsive for Web
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1300px) {
+    .hnc-header{
+        width: 100%;
+        height: 130px;
+
+        .logo-img {
+            float: left;
+            margin-left: 2%;
+            margin-top: 10px
+        }
+
+        .button-container{
+           float: right;
+           margin-right: 2%;
+            margin-top: 2%;
+        }
+        .button {
+            background-color: #00ADEF;
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            display: inline-block;
+            cursor: pointer;
+            width: 70%;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 35px;
+          }
+    }
+
+    .hnc-2021-banner {
+        background-color: #00ADEF;
+        display:flex;
+        justify-content: center;
+        height: fit-content;
+    }
+
+    .hnc-2021-banner > .img-container{
+       width: 500px;
+       height: 400px;
+       margin-right: 5%;
+
+       .banner-img {
+           width: 100%;
+           height: auto;
+       }
+
+    }
+
+    .hnc-2021-banner > .banner-text{
+        width: 500px;
+        height: 400px;
+        padding-top: 3%;
+        margin-left: 5%;
+        color: #fff;
+        
+        .banner-title {
+            font-size: larger;
+            font-weight: 500;
+            
+        }
+
+        .banner-subtitle {
+            font-size: x-large;
+        }
+    }
+
+    .about-hnc {
+        background-color: #fff;
+        display: inline-block;
+       
+    }
+
+    .about-hnc > .about-hnc-text {
+        width: 500px;
+        height: 400px;
+        margin-left: 10%;
+
+        .about-hnc-subtitle {
+            margin:auto;
+            display: block;
+
+        }
+    
+    }
+
+    .about-hnc > .about-image-container {
+        width: 500px;
+        height: 400px;
+        float: right;
+        margin-right: 10%;
+ 
+
+        .about-hnc-img {
+            padding-top: 10%;
+            height: 100%;
+        }
+    }
+
+    .about-hnc > .hnc-list-container {
+        margin-top: 5%;
+
+        .about-hnc-subtitle {
+
+        }
+
+        .about-list-group {
+            padding-left: 10%;
+            padding-right: 10%;
+        }
+    }
+
+    .hnc-signup {
+        
+            display: inline-block;
+
+        .signup-logo {
+            float: left;
+            padding:3%;
+        }
+        
+        .sign-up-links {
+           overflow: hidden;
+           padding:3%;
+
+           .qr-code {
+               width: 200px;
+               height: auto;
+           }
+
+           .button-container {
+               margin-top: 10%;
+
+               .button-white {
+                   margin-bottom: 4%;
+               }
+           }
+        }
+    }
+
+    // Sponsors
+
+    .hnc-sponsors {
+
+        .all-logo-sponsors{
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+            grid-gap: 1rem;
+
+            .sponsor-one{
+           
+            }
+
+            .sponsor-two {
+             
+            }
+
+            .sponsor-three {
+                .facebook {
+                    margin-top: 10%;
+                  
+                }
+            }
+
+            .sponsor-four {
+                .broad {
+                    
+                    padding: 10%;
+                }
+            }
+
+            .sponsor-five {
+                .ccf {
+                    margin-bottom: 10%;
+                    padding-bottom: 5%;
+                   
+                }
+            }
+        }
+    }
+
+    // footer
+    .hnc-footer {
+        
+        .footer-content {
+            display: inline-block;
+            .txt-mission-section {
+                float: left;
+                width: 50%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: larger;
+            }
+
+            .txt-socials-section {
+                overflow: hidden;
+                padding-top: 5%;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: bold;
+                font-size: larger;
+
+                .social-icons {
+                    
+                    i {
+                        font-size: 50px;
+                        margin-right: 2%;
+                    }
+                }
+               
+            }
+        
+
+            .footer-copyright {
+
+            }
+        }
+    }
+        
 }
