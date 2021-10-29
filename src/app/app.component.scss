@@ -21,6 +21,7 @@ a {
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
+    border-radius: 50px;
   }
 
   .button-white {
@@ -37,6 +38,7 @@ a {
     width: 50%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 35px;
+    border-radius: 50px;
   }
 
 
@@ -94,8 +96,8 @@ a {
 }  
 
 .about-hnc {
-    padding-top: 30px;
-   padding-bottom: 30px;
+    padding-top: 5%;
+    padding-bottom: 2%;
     width: 100%;
     height: auto;
     background-color: white;
@@ -136,76 +138,82 @@ a {
             }
          }
     }
-
-    .hnc-list-container {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: larger;
-        font-weight: bold;
-        .about-hnc-subtitle {
-            text-align: center;
-            padding-left: 20px;
-            padding-right: 20px;
-            padding-top: 2%;
-            color: #00ADEF;
-        }
-
-        ul li::before {
-            content: "\2022";
-            color: #00ADEF;
-            font-weight: bold;
-            display: inline-block; 
-            width: 1em;
-            margin-left: -1em;
-          
-        }
-
-        .about-list-group{
-            padding: 5%;
-
-            .about-list-item {
-                text-align: justify;
-                margin-bottom:4%;
-                font-weight: bolder;
-                font-size: larger;
-            }
-        }
-    }
-
 }
 
-.hnc-signup {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    width: 100%;
-    height: auto;
+.hnc-list-container {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+    font-weight: bold;
     background-color: #00ADEF;
-    margin: auto;
-    display: block;
-    
-    .qr-code {
-        margin: auto;
-        display: block;
-        width: 50%;
-        height: auto;
-        margin-bottom: 5%;
+    padding-bottom: 5%;
+
+    .about-hnc-subtitle {
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 2%;
+        color: #fff;
     }
 
-    .signup-logo {
+    ul li::before {
+        content: "\2022";
         color: #fff;
+        font-weight: bold;
+        display: inline-block; 
+        width: 1em;
+        margin-left: -1em;
+      
+    }
+
+    .about-list-group{
+        margin-top: 4%;
+        margin-right: 10%;
+        margin-left: 10%;
+
+        .about-list-item {
+            text-align: left;
+            margin-bottom:4%;
+            font-weight: bolder;
+            font-size: larger;
+        }
+    }
+}
+
+//Studuents
+
+.hnc-signup {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin: auto;
+    display: block;
+
+    
+        .qr-code {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 50%;
+            height: auto;
+            margin-bottom: 5%;
+        }
+
+    .signup-logo {
+        color: #00ADEF;
         text-align: center;
         .paper {
             // background-color: #fff;
             text-align: center;
-            font-size: 200px;
+            font-size: 150px;
             width: 40%;
             margin: auto;
             display: block; 
-            border-radius: 70%;
-            transform: rotate(-10deg);
+            // border-radius: 70%;
+            // transform: rotate(-10deg);
         }
 
         .sign-up-title {
-            color: #fff;
+            color: #00ADEF;
             font-family: Arial, Helvetica, sans-serif;
             font-weight: bold;
             font-size: x-large;
@@ -226,14 +234,151 @@ a {
     }
 
     .sign-up-links {
+        color: #00ADEF;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 10%;
+
+        .link-heading {
+            text-align: center;
+            margin-right: 2%;
+            margin-left: 5%;
+        }
+    }
+
+    // volunteers
+    .signup-logo-v {
+        color: #fff;
+        text-align: center;
+        margin-top: 15%;
+        background-color: #00ADEF;
+
+        .sign-up-title-v {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: x-large;
+
+            .paper-v {
+                // background-color: #fff;
+                padding-top: 10%;
+                text-align: center;
+                font-size: 150px;
+                width: 40%;
+                margin: auto;
+                display: block; 
+                // border-radius: 70%;
+                // transform: rotate(-10deg);
+            }
+        }
+
+    }
+
+    .signup-desc-v {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 5%;
+
+        .answer-v {
+            font-size: 25px;
+            color: black;
+        }
+    }
+
+    .qr-code-v {
+        margin: auto;
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .sign-up-links-v {
+        background-color: #00ADEF;
+        margin-top: 0;
         color: #fff;
         font-family: Arial, Helvetica, sans-serif;
         font-weight: bold;
         font-size: large;
-        padding: 1%;
+        padding-bottom: 10%;
 
-        .link-heading {
+        .link-heading-v {
             text-align: center;
+            margin-right: 2%;
+            margin-left: 2%;
+        }
+    }
+
+}
+
+// Volunteers
+
+.hnc-signup-v {
+    width: 100%;
+    height: auto;
+    background-color: #00ADEF;
+    margin-top: 5%;
+    margin: auto;
+    display: block;
+    
+    .qr-code-v {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 50%;
+        height: auto;
+        margin-bottom: 5%;
+    }
+
+    .signup-logo-v {
+        color: #fff;
+        text-align: center;
+        padding-top: 5%;
+        .paper-v {
+            // background-color: #fff;
+            text-align: center;
+            font-size: 150px;
+            width: 40%;
+            margin: auto;
+            display: block; 
+            // border-radius: 70%;
+            // transform: rotate(-10deg);
+        }
+
+        .sign-up-title-v {
+            color: #fff;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            font-size: x-large;
+        }
+
+    }
+
+    .signup-desc-v {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 5%;
+
+        .answer-v {
+            font-size: 25px;
+            color: black;
+        }
+    }
+
+    .sign-up-links-v {
+        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        font-size: large;
+        padding-bottom: 10%;
+
+        .link-heading-v {
+            text-align: center;
+            margin-right: 2%;
+            margin-left: 2%;
         }
     }
 
@@ -360,22 +505,22 @@ a {
         .social-icons {
             color: #fff;
             text-align: center;
-            .facebook {
+            #facebook {
                 margin-right: 2%;
                 font-size: 40px;
             }
             
-            .instagram {
+            #instagram {
                 margin-right: 2%;
                 font-size: 40px;
             }
 
-            .twitter {
+            #twitter {
                 margin-right: 2%;
                 font-size: 40px;
             }
 
-            .youtube {
+            #youtube {
                 margin-right: 2%;
                 font-size: 40px;
             }
@@ -439,6 +584,8 @@ a {
         display:flex;
         justify-content: center;
         height: fit-content;
+        padding-top: 4%;
+        padding-bottom: 4%;
     }
 
     .hnc-2021-banner > .img-container{
@@ -472,62 +619,52 @@ a {
     }
 
     .about-hnc {
-        background-color: #fff;
-        display: inline-block;
-       
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+
+    .about-hnc > .about-image-container {
+        width: 400px;
+        height: 500px;
+        margin-left: 2%;
+        margin-right: 5%;
+
+        .about-hnc-img {
+            margin-top: 30%;
+        }
     }
 
     .about-hnc > .about-hnc-text {
         width: 500px;
         height: 400px;
-        margin-left: 10%;
-
-        .about-hnc-subtitle {
-            margin:auto;
-            display: block;
-
-        }
-    
-    }
-
-    .about-hnc > .about-image-container {
-        width: 500px;
-        height: 400px;
-        float: right;
         margin-right: 10%;
- 
-
-        .about-hnc-img {
-            padding-top: 10%;
-            height: 100%;
-        }
     }
 
-    .about-hnc > .hnc-list-container {
-        margin-top: 5%;
-
-        .about-hnc-subtitle {
-
-        }
-
+    .hnc-list-container{ 
         .about-list-group {
-            padding-left: 10%;
-            padding-right: 10%;
+            margin-top: 2%;
+            padding-right: 20%;
+            padding-left: 20%;
         }
     }
-
+    
+    // Student Sign up
     .hnc-signup {
-        
-            display: inline-block;
+        display: flex;
+        justify-content: center;
 
         .signup-logo {
+            // border: greenyellow solid;
             float: left;
             padding:3%;
         }
         
         .sign-up-links {
+            // border: steelblue solid;
            overflow: hidden;
            padding:3%;
+           padding-top: 10%;
 
            .qr-code {
                width: 200px;
@@ -544,47 +681,95 @@ a {
         }
     }
 
-    // Sponsors
+    // Volunteer signup
+    .hnc-signup-v {
+        display: flex;
+        justify-content: center;
 
-    .hnc-sponsors {
+        .signup-logo-v {
+            // border: greenyellow solid;
+            float: left;
+            padding:3%;
+        }
+        
+        .sign-up-links-v {
+            // border: steelblue solid;
+           overflow: hidden;
+           padding:3%;
+           padding-top: 10%;
 
-        .all-logo-sponsors{
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-            grid-gap: 1rem;
+           .qr-code-v {
+               width: 200px;
+               height: auto;
+           }
 
-            .sponsor-one{
-           
-            }
+           .link-heading-v{
+                text-align: center;
+                margin-right: 2%;
+                margin-left: 5%;
+           }
 
-            .sponsor-two {
-             
-            }
+           .button-container {
+               margin-top: 10%;
 
-            .sponsor-three {
-                .facebook {
-                    margin-top: 10%;
-                  
-                }
-            }
-
-            .sponsor-four {
-                .broad {
-                    
-                    padding: 10%;
-                }
-            }
-
-            .sponsor-five {
-                .ccf {
-                    margin-bottom: 10%;
-                    padding-bottom: 5%;
-                   
-                }
-            }
+               .button-white {
+                   margin-bottom: 4%;
+               }
+           }
         }
     }
 
+    // Sponsors
+
+    .hnc-sponsors {
+        
+        
+        .all-logo-sponsors{
+
+            display: flex;
+            flex-wrap: wrap;
+            padding-right: 10%;
+            padding-left: 10%;
+            padding-top: 5%;
+            
+            .sponsor-one {
+                // border: red solid;
+            }   
+
+            .sponsor-two {
+                
+                // border: black solid;
+                padding-top: 5%;
+                
+            }   
+
+            .sponsor-three {
+                
+                // border: red solid;
+                padding-top: 7%;
+            
+            }   
+
+            .sponsor-four {
+                // border: black solid;
+               
+            }   
+            .sponsor-five {
+                
+                // border: red solid;
+            }  
+        }
+
+        .all-logo-sponsors > .sponsors-on-top {
+            flex: 1 1 auto;
+        
+        }
+
+        .all-logo-sponsors > .sponsors-on-bottom {
+            flex: 1 1 auto;
+        }
+
+    }
     // footer
     .hnc-footer {
         
